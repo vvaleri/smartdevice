@@ -2,11 +2,34 @@
   min-height: 100px;
   padding: 65px 0 0 0;
 
+  @include viewport--md {
+    padding: 0;
+  }
+
   background-color: #fafafa;
 
   &__inner {
     display: flex;
     padding-bottom: 55px;
+
+    @include viewport--md {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &__info {
+    @include viewport--md {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 24px 25px;
+    }
+
+    @include viewport--sm {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 16px 25px;
+    }
   }
 
   &__social {
@@ -15,10 +38,24 @@
   }
 
   &__icon {
+    display: flex;
+    align-items: center;
     margin: 0 15px 0 0;
+    border-radius: 50%;
+    transition: background-color $default-transition-settings;
 
     &:last-child {
       margin: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-blue;
+      transition: background-color $default-transition-settings;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 
@@ -27,6 +64,16 @@
     flex: 1 0 auto;
     font-size: 15px;
     color: $color-tangaroa;
+
+    @include viewport--md {
+      border-top: 1px solid rgba(98, 105, 98, 0.2);
+      padding: 35px 24px 45px;
+    }
+
+    @include viewport--sm {
+      flex-direction: column;
+      padding: 0;
+    }
   }
 }
 
@@ -34,6 +81,7 @@
   padding: 15px 0;
   font-size: 13px;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   border-top: 1px solid rgba(98, 105, 98, 0.2);
   opacity: 0.5;
 
@@ -49,5 +97,15 @@
 
   &__years {
     margin: 0 140px 0 60px;
+
+    @include viewport--lg {
+      margin: 0 40px 0 40px;
+    }
+  }
+
+  &__rights {
+    @include viewport--md {
+      display: none;
+    }
   }
 }
