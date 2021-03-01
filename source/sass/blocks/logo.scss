@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 16px;
+    font-family: $font-family--roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 29px;
+    color: $color-default-white;
+
+    span {
+      font-family: "Roboto", "Verdana", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #788891;
+    }
+
+    &--black {
+      color: #203c42;
+    }
+  }
+}
