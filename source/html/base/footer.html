@@ -25,15 +25,25 @@
     </div>
     <div class="footer__content">
       @@include("source/html/components/menu-footer.html")
-      @@include("source/html/components/contacts-footer.html")
+      <div class="footer__contacts contacts-footer accordion">
+        @@include("source/html/components/accordion.html", {
+          "title": "Наш офис"
+          })
+        <div class="contacts-footer__info accordion__content">
+          <p>г. Мытищи, Олимпийский проспект, д.10</p>
+          <p>+7 (495) 589-40-50</p>
+          <p>+7 (925) 003-87-67</p>
+          <p>+7 (926) 926-080-79</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer__copyright copyright">
     <div class="copyright__wrapper container">
       <div class="copyright__info">
-        <p class="copyright__rights">Все права защищены</p>
+        <p data-move="desktop" class="copyright__rights">Все права защищены</p>
         <p data-move="block" class="copyright__years">1999-2018 SD Service Devices</p>
-        <p data-move="desktop">Условия конфиденциальности</p>
+        <p>Условия конфиденциальности</p>
       </div>
       <p class="copyright__author">Developed by wow studio</p>
     </div>

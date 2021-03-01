@@ -1,0 +1,54 @@
+.accordion {
+  &__title {
+    margin: 0 0 25px 0;
+    font-family: $font-family--roboto;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    @include viewport--sm {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 30px 0;
+    }
+  }
+
+  &__content {
+    @include viewport--sm {
+      height: 0;
+      overflow: hidden;
+      overflow-y: auto;
+
+      &.active {
+        padding: 0 0 20px 0;
+        height: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include viewport--sm {
+      display: flex;
+      cursor: pointer;
+
+      &.active {
+        .open {
+          opacity: 0;
+        }
+      }
+
+      &:focus {
+        outline-color: #c4c4c4;
+        outline-style: dashed;
+      }
+    }
+
+    svg {
+      pointer-events: none;
+    }
+  }
+}
+

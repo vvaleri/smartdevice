@@ -1,6 +1,8 @@
-<div class="footer__menu menu-footer">
-  <p class="menu-footer__title">Разделы сайта</p>
-  <nav class="menu-footer__nav">
+<div class="footer__menu menu-footer accordion">
+  @@include("source/html/components/accordion.html", {
+    "title": "Разделы сайта"
+    })
+  <nav class="menu-footer__nav accordion__content">
     <ul class="menu-footer__list">
       <li class="menu-footer__item">
         <a href="#" class="menu-footer__link">О компании</a>

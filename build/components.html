@@ -103,9 +103,9 @@
     <header class="header">
   <div class="header__wrapper container">
     <a class="logo">
-  <svg width="52" height="52">
-    <use xlink:href="#icon-logo"></use>
-  </svg>
+    <svg class="logo__svg " width="52" height="52">
+      <use xlink:href="#icon-logo"></use>
+    </svg>
   <p class="logo__text ">Smart Device<span>умные технологии</span></p>
 </a>
 
@@ -157,9 +157,9 @@
   <div class="footer__inner container">
     <div class="footer__info">
       <a class="logo">
-  <svg width="52" height="52">
-    <use xlink:href="#icon-logo"></use>
-  </svg>
+    <svg class="logo__svg  logo__svg--black " width="52" height="52">
+      <use xlink:href="#icon-logo"></use>
+    </svg>
   <p class="logo__text  logo__text--black ">Smart Device<span>умные технологии</span></p>
 </a>
 
@@ -183,9 +183,17 @@
       </div>
     </div>
     <div class="footer__content">
-      <div class="footer__menu menu-footer">
-  <p class="menu-footer__title">Разделы сайта</p>
-  <nav class="menu-footer__nav">
+      <div class="footer__menu menu-footer accordion">
+  <div class="accordion__title">
+  <p>Разделы сайта</p>
+  <div class="accordion__btn" tabindex="0">
+    <svg width="16" height="16" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line class="open" x1="11.5" y1="2" x2="11.5" y2="18" stroke="#C4C4C4"/>
+      <line x1="3" y1="9.5" x2="19" y2="9.5" stroke="#C4C4C4"/>
+      </svg>
+  </div>
+</div>
+  <nav class="menu-footer__nav accordion__content">
     <ul class="menu-footer__list">
       <li class="menu-footer__item">
         <a href="#" class="menu-footer__link">О компании</a>
@@ -214,24 +222,31 @@
   </nav>
 </div>
 
-      <div class="footer__contacts contacts-footer">
-  <p class="contacts-footer__title">Наш офис</p>
-  <div class="contacts-footer__info">
-    <p>г. Мытищи, Олимпийский проспект, д.10</p>
-    <p>+7 (495) 589-40-50</p>
-    <p>+7 (925) 003-87-67</p>
-    <p>+7 (926) 926-080-79</p>
+      <div class="footer__contacts contacts-footer accordion">
+        <div class="accordion__title">
+  <p>Наш офис</p>
+  <div class="accordion__btn" tabindex="0">
+    <svg width="16" height="16" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line class="open" x1="11.5" y1="2" x2="11.5" y2="18" stroke="#C4C4C4"/>
+      <line x1="3" y1="9.5" x2="19" y2="9.5" stroke="#C4C4C4"/>
+      </svg>
   </div>
 </div>
-
+        <div class="contacts-footer__info accordion__content">
+          <p>г. Мытищи, Олимпийский проспект, д.10</p>
+          <p>+7 (495) 589-40-50</p>
+          <p>+7 (925) 003-87-67</p>
+          <p>+7 (926) 926-080-79</p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer__copyright copyright">
     <div class="copyright__wrapper container">
       <div class="copyright__info">
-        <p class="copyright__rights">Все права защищены</p>
+        <p data-move="desktop" class="copyright__rights">Все права защищены</p>
         <p data-move="block" class="copyright__years">1999-2018 SD Service Devices</p>
-        <p data-move="desktop">Условия конфиденциальности</p>
+        <p>Условия конфиденциальности</p>
       </div>
       <p class="copyright__author">Developed by wow studio</p>
     </div>
