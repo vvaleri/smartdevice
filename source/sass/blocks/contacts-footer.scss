@@ -1,0 +1,13 @@
+.contacts-footer {
+  &__title {
+    margin: 0 0 30px 0;
+    font-family: $font-family--roboto;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  &__info {
+    opacity: 0.5;
+  }
+}

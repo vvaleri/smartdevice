@@ -629,7 +629,51 @@ button,
           display: none; } }
 
 .footer {
-  min-height: 100px; }
+  min-height: 100px;
+  padding: 65px 0 0 0;
+  background-color: #fafafa; }
+  .footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 55px; }
+  .footer__social {
+    margin: 35px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .footer__icon {
+    margin: 0 15px 0 0; }
+    .footer__icon:last-child {
+      margin: 0; }
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    font-size: 15px;
+    color: #1b2d37; }
+
+.copyright {
+  padding: 15px 0;
+  font-size: 13px;
+  border-top: 1px solid rgba(98, 105, 98, 0.2);
+  opacity: 0.5; }
+  .copyright__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .copyright__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .copyright__years {
+    margin: 0 140px 0 60px; }
 
 .modal {
   position: fixed;
@@ -754,6 +798,38 @@ button,
         display: none; } }
     .logo__text--black {
       color: #203c42; }
+
+.menu-footer {
+  margin: 0 auto; }
+  .menu-footer__title {
+    margin: 0 0 30px 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.05em; }
+  .menu-footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0.5; }
+  .menu-footer__list {
+    padding: 0;
+    margin: 0 65px 0 0;
+    list-style: none; }
+    .menu-footer__list:last-child {
+      margin: 0; }
+  .menu-footer__link {
+    line-height: 25px; }
+
+.contacts-footer__title {
+  margin: 0 0 30px 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 0.05em; }
+
+.contacts-footer__info {
+  opacity: 0.5; }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
