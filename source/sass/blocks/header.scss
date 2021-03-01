@@ -1,12 +1,71 @@
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: 30px 0 10px;
+
   background-color: rgb(17, 43, 43);
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
-  a,
-  p {
-    color: $color-default-white;
+  .contact {
+    display: flex;
+    align-items: center;
+
+    &__mail {
+      margin: 0 85px 0 0;
+    }
+
+    &__phone {
+      margin: 0 50px 0 0;
+    }
+
+    &__mail,
+    &__phone {
+      display: flex;
+      align-items: center;
+    }
+
+    &__link {
+      margin: 0 0 0 15px;
+      transition: color $default-transition-settings;
+
+      &:hover,
+      &:focus {
+        color: $color-blue;
+        transition: color $default-transition-settings;
+      }
+    }
+
+    &__link,
+    &__btn {
+      color: $color-default-white;
+    }
+
+    &__btn {
+      padding: 14px 25px;
+      font-family: $font-family--roboto;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: none;
+      border-radius: 5px;
+      border: 1px solid $color-default-white;
+      transition: background-color $default-transition-settings;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        background-color: $color-blue;
+        transition: background-color $default-transition-settings;
+      }
+    }
   }
 }

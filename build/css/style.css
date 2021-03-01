@@ -343,7 +343,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../fonts/Roboto-Condensed.woff2") format("woff2"), url("../fonts/Roboto-Condensed.woff") format("woff"); }
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff"); }
 
 @font-face {
   font-style: normal;
@@ -549,14 +549,68 @@ button,
       padding: 0; } }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0 10px;
   background-color: #112b2b; }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .header a,
-  .header p {
-    color: #ffffff; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header .contact__mail {
+      margin: 0 85px 0 0; }
+    .header .contact__phone {
+      margin: 0 50px 0 0; }
+    .header .contact__mail, .header .contact__phone {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .header .contact__link {
+      margin: 0 0 0 15px;
+      -webkit-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
+      .header .contact__link:hover, .header .contact__link:focus {
+        color: #00b2ff;
+        -webkit-transition: color 0.3s ease;
+        transition: color 0.3s ease; }
+    .header .contact__link, .header .contact__btn {
+      color: #ffffff; }
+    .header .contact__btn {
+      padding: 14px 25px;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: none;
+      border-radius: 5px;
+      border: 1px solid #ffffff;
+      -webkit-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease;
+      cursor: pointer; }
+      .header .contact__btn:hover, .header .contact__btn:focus {
+        background-color: #00b2ff;
+        -webkit-transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease; }
 
 .footer {
   min-height: 100px; }
@@ -664,7 +718,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0 0 0 16px;
-    font-family: "Roboto Condensed", "Verdana", sans-serif;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 29px;
