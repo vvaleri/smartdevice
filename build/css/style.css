@@ -574,8 +574,14 @@ button,
             align-items: center; }
     .header .contact__mail {
       margin: 0 85px 0 0; }
+      @media (max-width: 1023px) {
+        .header .contact__mail {
+          margin: 0 30px 0 0; } }
     .header .contact__phone {
       margin: 0 50px 0 0; }
+      @media (max-width: 1023px) {
+        .header .contact__phone {
+          margin: 0; } }
     .header .contact__mail, .header .contact__phone {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -583,6 +589,10 @@ button,
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      @media (max-width: 1023px) {
+        .header .contact__mail svg, .header .contact__phone svg {
+          width: 24px;
+          height: 24px; } }
     .header .contact__link {
       margin: 0 0 0 15px;
       -webkit-transition: color 0.3s ease;
@@ -591,6 +601,9 @@ button,
         color: #00b2ff;
         -webkit-transition: color 0.3s ease;
         transition: color 0.3s ease; }
+      @media (max-width: 1023px) {
+        .header .contact__link {
+          display: none; } }
     .header .contact__link, .header .contact__btn {
       color: #ffffff; }
     .header .contact__btn {
@@ -611,6 +624,9 @@ button,
         background-color: #00b2ff;
         -webkit-transition: background-color 0.3s ease;
         transition: background-color 0.3s ease; }
+      @media (max-width: 1023px) {
+        .header .contact__btn {
+          display: none; } }
 
 .footer {
   min-height: 100px; }
@@ -709,6 +725,10 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 767px) {
+    .logo svg {
+      width: 38px;
+      height: 38px; } }
   .logo__text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -729,6 +749,9 @@ button,
       font-size: 12px;
       line-height: 14px;
       color: #788891; }
+    @media (max-width: 767px) {
+      .logo__text {
+        display: none; } }
     .logo__text--black {
       color: #203c42; }
 
