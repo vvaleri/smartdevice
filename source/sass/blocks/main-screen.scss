@@ -8,13 +8,17 @@
 
   background-color: $color-tangaroa;
 
-
   &__inner {
     position: relative;
 
     display: flex;
     align-items: center;
+
+    @include viewport--sm {
+      flex-direction: column-reverse;
+    }
   }
+
 
   &__content {
     display: flex;
@@ -22,6 +26,20 @@
     flex-direction: column;
 
     color: $color-default-white;
+
+    @include viewport--lg {
+      flex-shrink: 1;
+    }
+
+    @include viewport--md {
+      flex: 1 0 450px;
+      margin: 0 0 0 50px;
+    }
+
+    @include viewport--sm {
+      flex: 1 0 auto;
+      margin: 0;
+    }
   }
 
   &__title {
@@ -32,11 +50,33 @@
     font-family: $font-family--roboto;
     text-transform: uppercase;
     letter-spacing: 0.07em;
+
+    @include viewport--lg {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    @include viewport--sm {
+      z-index: 3;
+
+      margin: 0 0 30px 0;
+
+      font-size: 40px;
+      line-height: 47px;
+    }
   }
 
   &__box {
     display: flex;
     margin: 0 0 35px 0;
+
+    @include viewport--md {
+      margin: 0 0 50px 0;
+    }
+
+    @include viewport--sm {
+      margin: 0 0 40px 0;
+    }
   }
 
   &__line {
@@ -51,10 +91,49 @@
   &__text {
     font-size: 22px;
     line-height: 34px;
+
+    @include viewport--sm {
+      font-size: 16px;
+      line-height: 155%;
+    }
+  }
+
+  &__images {
+    transform: translate(70px, 50px);
+
+    @include viewport--md {
+      transform: translate(-10px, -50px);
+    }
+
+    @include viewport--sm {
+      width: 300px;
+
+      transform: translate(0, 20px);
+    }
   }
 
   &__img {
-    transform: translate(70px, 50px);
+    @include viewport--md {
+      min-width: 465px;
+    }
+
+    @include viewport--sm {
+      min-width: 300px;
+    }
+  }
+
+  &__triangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include viewport--md {
+      transform: translate(60px, -120px);
+    }
+
+    @include viewport--sm {
+      transform: translate(20px, -150px);
+    }
   }
 
   &__bg {
@@ -94,6 +173,23 @@
 
     background-color: $color-blue;
     border-radius: 5px;
+
+    transition: background-color $default-transition-settings;
+
+    @include viewport--md {
+      margin: 0 0 0 60px;
+    }
+    @include viewport--sm {
+      margin: 0;
+    }
+
+    &:hover {
+      color: $color-blue;
+
+      background-color: $color-default-white;
+
+      transition: background-color $default-transition-settings;
+    }
   }
 
   &__scroll {
@@ -104,7 +200,32 @@
     font-size: 14px;
     line-height: 16px;
 
-    transform: rotate(-90deg) translate(-150px, -35px);
+    transform: rotate(-90deg) translate(-140px, -35px);
     opacity: 0.5;
+
+    @include viewport--md {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
+
+.button {
+  &--mobile {
+    display: none;
+
+    @include viewport--sm {
+      display: inline;
+    }
+  }
+
+  &--desktop {
+    @include viewport--sm {
+      display: none;
+    }
   }
 }
