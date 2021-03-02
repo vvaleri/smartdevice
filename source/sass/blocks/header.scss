@@ -2,8 +2,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+
   display: flex;
+  width: 100%;
   padding: 30px 0 10px;
 
   background-color: rgb(17, 43, 43);
@@ -48,16 +49,18 @@
 
     &__link {
       margin: 0 0 0 15px;
+
       transition: color $default-transition-settings;
+
+      @include viewport--md {
+        display: none;
+      }
 
       &:hover,
       &:focus {
         color: $color-blue;
-        transition: color $default-transition-settings;
-      }
 
-      @include viewport--md {
-        display: none;
+        transition: color $default-transition-settings;
       }
     }
 
@@ -68,26 +71,30 @@
 
     &__btn {
       padding: 14px 25px;
-      font-family: $font-family--roboto;
-      font-size: 14px;
+
       font-weight: 700;
+      font-size: 14px;
       line-height: 16px;
+      font-family: $font-family--roboto;
       text-transform: uppercase;
       letter-spacing: 0.05em;
+
       background: none;
-      border-radius: 5px;
       border: 1px solid $color-default-white;
-      transition: background-color $default-transition-settings;
+      border-radius: 5px;
       cursor: pointer;
+
+      transition: background-color $default-transition-settings;
+
+      @include viewport--md {
+        display: none;
+      }
 
       &:hover,
       &:focus {
         background-color: $color-blue;
-        transition: background-color $default-transition-settings;
-      }
 
-      @include viewport--md {
-        display: none;
+        transition: background-color $default-transition-settings;
       }
     }
   }

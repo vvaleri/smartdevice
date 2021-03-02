@@ -1,9 +1,10 @@
 .accordion {
   &__title {
     margin: 0 0 25px 0;
+
+    line-height: 16px;
     font-family: $font-family--roboto;
     text-transform: uppercase;
-    line-height: 16px;
     letter-spacing: 0.05em;
 
     @include viewport--sm {
@@ -21,8 +22,8 @@
       overflow-y: auto;
 
       &.active {
-        padding: 0 0 20px 0;
         height: 100%;
+        padding: 0 0 20px 0;
       }
     }
   }
@@ -32,6 +33,7 @@
 
     @include viewport--sm {
       display: flex;
+
       cursor: pointer;
 
       &.active {
@@ -41,8 +43,8 @@
       }
 
       &:focus {
-        outline-color: #c4c4c4;
         outline-style: dashed;
+        outline-color: #c4c4c4;
       }
     }
 
@@ -51,4 +53,3 @@
     }
   }
 }
-

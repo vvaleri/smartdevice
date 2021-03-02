@@ -2,11 +2,11 @@
   min-height: 100px;
   padding: 65px 0 0 0;
 
+  background-color: #fafafa;
+
   @include viewport--md {
     padding: 0;
   }
-
-  background-color: #fafafa;
 
   &__inner {
     display: flex;
@@ -34,8 +34,8 @@
   }
 
   &__social {
-    margin: 35px 0 0 0;
     display: flex;
+    margin: 35px 0 0 0;
 
     @include viewport--md {
       margin: 0;
@@ -46,7 +46,9 @@
     display: flex;
     align-items: center;
     margin: 0 15px 0 0;
+
     border-radius: 50%;
+
     transition: background-color $default-transition-settings;
 
     &:last-child {
@@ -56,6 +58,7 @@
     &:hover,
     &:focus {
       background-color: $color-blue;
+
       transition: background-color $default-transition-settings;
     }
 
@@ -67,12 +70,14 @@
   &__content {
     display: flex;
     flex: 1 0 auto;
+
     font-size: 15px;
     color: $color-tangaroa;
 
     @include viewport--md {
-      border-top: 1px solid rgba(98, 105, 98, 0.2);
       padding: 35px 24px 45px;
+
+      border-top: 1px solid rgba(98, 105, 98, 0.2);
     }
 
     @include viewport--sm {
@@ -94,10 +99,12 @@
 
 .copyright {
   padding: 15px 0;
+
   font-size: 13px;
+  line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  line-height: 24px;
+
   border-top: 1px solid rgba(98, 105, 98, 0.2);
   opacity: 0.5;
 
@@ -129,10 +136,12 @@
 
     @include viewport--md {
       margin: 0;
+
       font-size: 13px;
+      color: $color-tangaroa;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      color: $color-tangaroa;
+
       opacity: 0.5;
     }
 
@@ -153,4 +162,3 @@
     }
   }
 }
-

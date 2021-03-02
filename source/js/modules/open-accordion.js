@@ -5,7 +5,6 @@ const breakpointMobile = window.matchMedia('(max-width:767px)');
 
 const openAccordion = () => {
 
-
   const openMenu = (i) => {
     accordionContent[i].classList.toggle('active');
     accordionBtn[i].classList.toggle('active');
