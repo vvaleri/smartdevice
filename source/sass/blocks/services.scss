@@ -2,14 +2,33 @@
   background-color: $color-tangaroa;
 
   &__content {
-    color: $color-default-white;
-    font-family: $font-family--roboto;
     padding: 90px 100px 120px;
+
+    font-family: $font-family--roboto;
+    color: $color-default-white;
+
+    @include viewport--lg {
+      padding: 90px 50px 120px;
+    }
+
+    @include viewport--md {
+      padding: 50px 0 80px;
+    }
 
     h2 {
       margin: 0 0 50px 0;
+
       font-size: 36px;
       line-height: 51px;
+
+      @include viewport--md {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      @include viewport--sm {
+        font-size: 28px;
+      }
     }
   }
 }
