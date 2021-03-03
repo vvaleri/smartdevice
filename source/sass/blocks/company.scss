@@ -1,6 +1,13 @@
 .company {
   position: relative;
 
+  padding: 110px 0;
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+  }
+
   &__bg {
     img {
       position: absolute;

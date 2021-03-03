@@ -1,0 +1,14 @@
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+  gap: 30px;
+
+  @include viewport--md {
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  }
+
+  @include viewport--sm {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+  }
+}

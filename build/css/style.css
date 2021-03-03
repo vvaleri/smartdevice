@@ -1211,7 +1211,11 @@ button,
     display: none; } }
 
 .company {
-  position: relative; }
+  position: relative;
+  padding: 110px 0; }
+  .company__inner {
+    position: relative;
+    z-index: 3; }
   .company__bg img {
     position: absolute;
     top: 0;
@@ -1219,6 +1223,62 @@ button,
     width: 100%;
     height: 100%;
     pointer-events: none; }
+
+.advantages {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+  gap: 30px; }
+  @media (max-width: 1023px) {
+    .advantages {
+      grid-template-columns: repeat(auto-fit, minmax(345px, 1fr)); } }
+  @media (max-width: 767px) {
+    .advantages {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 20px; } }
+
+.card-advantages {
+  padding: 40px 42px 50px 44px;
+  background-color: #ffffff;
+  border-left: 3px solid #00b2ff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+  @media (max-width: 1023px) {
+    .card-advantages {
+      padding: 20px 20px 30px 25px; } }
+  @media (max-width: 767px) {
+    .card-advantages {
+      padding: 25px 15px 25px 25px; } }
+  .card-advantages__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 20px 0; }
+    @media (max-width: 1023px) {
+      .card-advantages__icon {
+        margin: 0 0 15px 0; } }
+  .card-advantages__title {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    color: #00b2ff; }
+    @media (max-width: 767px) {
+      .card-advantages__title {
+        font-size: 20px; } }
+  .card-advantages__text {
+    color: #666666; }
+  @media (hover: hover), screen and (min-width: 0\0) {
+    .card-advantages:hover .card-advantages__title,
+    .card-advantages:hover .card-advantages__text {
+      color: #ffffff; }
+    .card-advantages:hover .card-advantages__icon svg {
+      stroke: #ffffff; }
+    .card-advantages:hover {
+      background-color: #00b2ff;
+      -webkit-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease; } }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
