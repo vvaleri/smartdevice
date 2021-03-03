@@ -1240,6 +1240,7 @@ button,
 .card-advantages {
   padding: 40px 42px 50px 44px;
   background-color: #ffffff;
+  border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
   cursor: pointer;
   -webkit-transition: background-color 0.3s ease;
