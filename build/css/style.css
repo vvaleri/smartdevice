@@ -558,6 +558,9 @@ button,
   width: 100%;
   padding: 30px 0 10px;
   z-index: 3; }
+  @media (max-width: 767px) {
+    .header {
+      padding: 20px 0 10px; } }
   .header__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -572,6 +575,11 @@ button,
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .header .contact {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .header .contact__mail {
       margin: 0 85px 0 0; }
       @media (max-width: 1023px) {
@@ -1011,6 +1019,7 @@ button,
           align-items: center;
   min-height: 100vh;
   min-height: calc(100 * var(--vh, 1vh));
+  padding: 90px 0 0 0;
   background-color: #1b2d37; }
   .main__inner {
     position: relative;
@@ -1027,6 +1036,7 @@ button,
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse; } }
   .main__content {
+    z-index: 4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1040,13 +1050,11 @@ button,
     color: #ffffff; }
     @media (max-width: 1439px) {
       .main__content {
-        -ms-flex-negative: 1;
-            flex-shrink: 1; } }
-    @media (max-width: 1023px) {
-      .main__content {
         -webkit-box-flex: 1;
             -ms-flex: 1 0 450px;
-                flex: 1 0 450px;
+                flex: 1 0 450px; } }
+    @media (max-width: 1023px) {
+      .main__content {
         margin: 0 0 0 50px; } }
     @media (max-width: 767px) {
       .main__content {
@@ -1067,7 +1075,6 @@ button,
         line-height: 70px; } }
     @media (max-width: 767px) {
       .main__title {
-        z-index: 3;
         margin: 0 0 30px 0;
         font-size: 40px;
         line-height: 47px; } }
@@ -1081,7 +1088,7 @@ button,
         margin: 0 0 50px 0; } }
     @media (max-width: 767px) {
       .main__box {
-        margin: 0 0 40px 0; } }
+        margin: 0 0 30px 0; } }
   .main__line {
     width: 66px;
     height: 2px;
@@ -1095,57 +1102,48 @@ button,
     @media (max-width: 767px) {
       .main__text {
         font-size: 16px;
-        line-height: 155%; } }
-  .main__images {
-    position: relative;
-    width: 700px;
-    height: 550px;
-    -webkit-transform: translate(70px, 50px);
-            transform: translate(70px, 50px); }
-    @media (max-width: 1439px) {
-      .main__images {
-        width: 600px;
-        height: 400px;
-        -webkit-transform: translate(30px, 30px);
-                transform: translate(30px, 30px); } }
-    @media (max-width: 1023px) {
-      .main__images {
-        -webkit-transform: translate(0, -30px);
-                transform: translate(0, -30px); } }
-    @media (max-width: 767px) {
-      .main__images {
-        width: 350px;
-        height: 250px; } }
+        line-height: 24px; } }
   .main__img {
-    position: absolute;
+    position: sticky;
+    right: 0;
     bottom: 0;
-    left: 0;
     z-index: 3;
-    width: 100%;
-    height: 100%; }
+    -webkit-transform: translate(50px, 50px);
+            transform: translate(50px, 50px); }
     @media (max-width: 1439px) {
       .main__img {
-        min-width: 465px; } }
+        max-width: 60%;
+        -webkit-transform: translate(160px, 50px);
+                transform: translate(160px, 50px); } }
+    @media (max-width: 1023px) {
+      .main__img {
+        -webkit-transform: translate(190px, -20px);
+                transform: translate(190px, -20px); } }
     @media (max-width: 767px) {
       .main__img {
-        min-width: 200px; } }
+        max-width: 85%;
+        -webkit-transform: translate(0, -10px);
+                transform: translate(0, -10px); } }
   .main__triangle {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
+    right: 0;
+    -webkit-transform: translate(30px, 50px);
+            transform: translate(30px, 50px); }
     @media (max-width: 1439px) {
       .main__triangle {
-        min-width: 465px; } }
+        max-width: 60%;
+        -webkit-transform: translate(160px, 10px);
+                transform: translate(160px, 10px); } }
     @media (max-width: 1023px) {
       .main__triangle {
-        top: -30px;
-        left: -30px; } }
+        -webkit-transform: translate(180px, -20px);
+                transform: translate(180px, -20px); } }
     @media (max-width: 767px) {
       .main__triangle {
-        min-width: 200px;
-        left: 150px; } }
+        max-width: 80%;
+        -webkit-transform: translate(160px, -20px);
+                transform: translate(160px, -20px); } }
   .main__bg img {
     position: absolute;
     top: 0;
@@ -1161,7 +1159,14 @@ button,
   .buttons-main__form, .buttons-main__scroll {
     color: #ffffff; }
   .buttons-main__form {
-    margin: 0 0 0 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 400px;
+    margin: 0 0 0 60px;
     padding: 17px 30px;
     font-weight: 700;
     font-size: 16px;
@@ -1173,9 +1178,6 @@ button,
     border-radius: 5px;
     -webkit-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease; }
-    @media (max-width: 1023px) {
-      .buttons-main__form {
-        margin: 0 0 0 60px; } }
     @media (max-width: 767px) {
       .buttons-main__form {
         margin: 0; } }
@@ -1191,9 +1193,13 @@ button,
     left: 0;
     font-size: 14px;
     line-height: 16px;
-    -webkit-transform: rotate(-90deg) translate(-140px, -35px);
-            transform: rotate(-90deg) translate(-140px, -35px);
+    -webkit-transform: rotate(-90deg) translate(-120px, -35px);
+            transform: rotate(-90deg) translate(-120px, -35px);
     opacity: 0.5; }
+    @media (max-width: 1439px) {
+      .buttons-main__scroll {
+        -webkit-transform: rotate(-90deg) translate(-100px, -35px);
+                transform: rotate(-90deg) translate(-100px, -35px); } }
     @media (max-width: 1023px) {
       .buttons-main__scroll {
         display: none; } }
