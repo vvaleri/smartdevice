@@ -1,0 +1,28 @@
+<section class="services container">
+  <div class="services__content">
+    <h2>Service Device предлагает следующие товары и услуги</h2>
+    <div class="services__cards cards-services">
+      @@include("source/html/components/cards-services.html", {
+        "img": {
+          "src": "services-img1",
+          "formate": "png"
+        },
+        "title": "Производство печатных плат",
+      })
+      @@include("source/html/components/cards-services.html", {
+        "img": {
+          "src": "services-img2",
+          "formate": "png"
+        },
+        "title": "Монтаж печатных плат",
+      })
+      @@include("source/html/components/cards-services.html", {
+        "img": {
+          "src": "services-img3",
+          "formate": "png"
+        },
+        "title": "Комплектующие для светотехники",
+      })
+    </div>
+  </div>
+</section>
