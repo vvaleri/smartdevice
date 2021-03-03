@@ -43,7 +43,7 @@
   }
 
   &__title {
-    margin: 0 0 50px 0;
+    margin: 0 0 40px 0;
 
     font-size: 80px;
     line-height: 94px;
@@ -99,26 +99,41 @@
   }
 
   &__images {
+    position: relative;
+    width: 700px;
+    height: 550px;
     transform: translate(70px, 50px);
 
+    @include viewport--lg {
+      width: 600px;
+      height: 400px;
+      transform: translate(30px, 30px);
+    }
+
     @include viewport--md {
-      transform: translate(-10px, -50px);
+      transform: translate(0, -30px);
     }
 
     @include viewport--sm {
-      width: 300px;
-
-      transform: translate(0, 20px);
+      width: 350px;
+      height: 250px;
     }
   }
 
   &__img {
-    @include viewport--md {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+
+    @include viewport--lg {
       min-width: 465px;
     }
 
     @include viewport--sm {
-      min-width: 300px;
+      min-width: 200px;
     }
   }
 
@@ -126,15 +141,24 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include viewport--lg {
+      min-width: 465px;
+    }
 
     @include viewport--md {
-      transform: translate(60px, -120px);
+      top: -30px;
+      left: -30px;
     }
 
     @include viewport--sm {
-      transform: translate(20px, -150px);
+      min-width: 200px;
+      left: 150px;
     }
   }
+
 
   &__bg {
     img {
@@ -148,8 +172,11 @@
       min-height: calc(100 * var(--vh, 1vh));
 
       pointer-events: none;
+
     }
   }
+
+
 }
 
 .buttons-main {
@@ -179,16 +206,20 @@
     @include viewport--md {
       margin: 0 0 0 60px;
     }
+
     @include viewport--sm {
       margin: 0;
     }
 
-    &:hover {
-      color: $color-blue;
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:hover,
+      &:focus {
+        color: $color-blue;
 
-      background-color: $color-default-white;
+        background-color: $color-default-white;
 
-      transition: background-color $default-transition-settings;
+        transition: background-color $default-transition-settings;
+      }
     }
   }
 
