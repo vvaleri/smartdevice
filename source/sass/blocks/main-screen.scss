@@ -9,6 +9,10 @@
 
   background-color: $color-tangaroa;
 
+  @media (max-height: 440px) and (orientation: landscape) {
+    padding-bottom: 10px;
+  }
+
   &__inner {
     position: relative;
 
@@ -53,15 +57,21 @@
     letter-spacing: 0.07em;
 
     @include viewport--lg {
+      margin: 0 0 30px 0;
+
       font-size: 60px;
       line-height: 70px;
     }
 
     @include viewport--sm {
-      margin: 0 0 30px 0;
-
       font-size: 40px;
       line-height: 47px;
+    }
+
+    @media (max-height: 440px) and (orientation: landscape) {
+      font-size: 30px;
+      line-height: 37px;
+      margin: 0 0 15px 0;
     }
   }
 
@@ -75,6 +85,10 @@
 
     @include viewport--sm {
       margin: 0 0 30px 0;
+    }
+
+    @media (max-height: 440px) and (orientation: landscape) {
+      margin: 0 0 15px 0;
     }
   }
 
@@ -218,7 +232,7 @@
     opacity: 0.5;
 
     @include viewport--lg {
-      transform: rotate(-90deg) translate(-100px, -35px);
+      transform: rotate(-90deg) translate(-90px, -35px);
     }
 
     @include viewport--md {
