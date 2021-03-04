@@ -27,9 +27,26 @@
         <div class="company__bg"><img src="../img/bg/company-bg.png" alt="серые треугольники на фоне"></div>
       </section>
       @@include("source/html/components/services.html")
+      <section class="feedback">
+        <div class="feedback__inner container-section">
+          <div class="feedback__img">
+            <!-- 1х: 511px; 2x: 1022px -->
+            <img src="../img/content/feedback-img@1x.png" srcset="../img/content/feedback-img@2x.png 2x" width="511" height="288" alt="белый бумажный самолёт">
+          </div>
+          @@include("source/html/components/form.html", {
+            "title": "Остались вопросы? Задайте их нам!",
+            "text": "Мы проконсультируем Вас бесплатно"
+          })
+        </div>
+        <div class="feedback__bg"><img src="../img/bg/feedback-bg.png" alt="серые треуольники на фоне"></div>
+      </section>
     </main>
 
     @@include("source/html/base/footer.html")
+
+    @@include("source/html/base/modal.html", {
+      "name": "feedback"
+    })
 
   </div>
 
