@@ -3,7 +3,6 @@
     <h2 class="form__title @@if (context.mod) { form__title--@@mod }">@@title</h2>
     <p class="form__text">@@text</p>
   </div>
-
   <form class="form__main">
     <div class="form__inputs @@if (context.mod) { form__inputs--@@mod }">
       <label for="name" class="visually-hidden">Имя</label>
@@ -18,10 +17,11 @@
     <div class="form__buttons @@if (context.mod) { form__buttons--@@mod }">
       <button class="form__send @@if (context.mod) { form__send--@@mod }">Задать вопрос</button>
       <div class="form__checkbox @@if (context.mod) { form__checkbox--@@mod }">
-        <label for="checkbox">
-        <input type="checkbox" id="checkbox" checked>
-        <span class="form__check"></span>
-        Я согласен на обработку персональных данных</label>
+        <label for="checkbox" tabindex="0">
+         <input type="checkbox" id="checkbox" checked>
+         <span class="form__check"></span>
+          Я согласен на обработку персональных данных
+       </label>
       </div>
     </div>
   </form>

@@ -9,7 +9,7 @@
 
   background-color: $color-tangaroa;
 
-  @media (max-height: 440px) and (orientation: landscape) {
+  @media (max-height: 465px) {
     padding-bottom: 10px;
   }
 
@@ -68,8 +68,8 @@
       line-height: 47px;
     }
 
-    @media (max-height: 440px) and (orientation: landscape) {
-      font-size: 30px;
+    @media (max-height: 465px) {
+      font-size: 35px;
       line-height: 37px;
       margin: 0 0 15px 0;
     }
@@ -87,9 +87,6 @@
       margin: 0 0 30px 0;
     }
 
-    @media (max-height: 440px) and (orientation: landscape) {
-      margin: 0 0 15px 0;
-    }
   }
 
   &__line {
