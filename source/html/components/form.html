@@ -1,24 +1,28 @@
 <div class="form">
-  <div class="form__title">
-    <h2>@@title</h2>
+  <div class="form__header @@if (context.mod) { form__header--@@mod }">
+    <h2 class="form__title @@if (context.mod) { form__title--@@mod }">@@title</h2>
     <p class="form__text">@@text</p>
   </div>
 
   <form class="form__main">
-    <div class="form__inputs">
-      <label for="name">Имя</label>
+    <div class="form__inputs @@if (context.mod) { form__inputs--@@mod }">
+      <label for="name" class="visually-hidden">Имя</label>
       <input id="name" type="text" placeholder="Имя">
-      <label for="phone">Телефон</label>
+      <label for="phone" class="visually-hidden">Телефон</label>
       <input id="phone" type="tel" placeholder="Телефон">
     </div>
-    <div class="form__message">
-      <label for="message">Введите ваш вопрос</label>
+    <div class="form__message @@if (context.mod) { form__message--@@mod }">
+      <label for="message" class="visually-hidden">Введите ваш вопрос</label>
       <textarea id="message" placeholder="Ваш вопрос"></textarea>
     </div>
-    <div class="form__buttons">
-      <button class="form__send">Задать вопрос</button>
-      <label for="checkbox">Я согласен на обработку персональных данных</label>
-      <input type="checkbox" id="checkbox" value="yes">
+    <div class="form__buttons @@if (context.mod) { form__buttons--@@mod }">
+      <button class="form__send @@if (context.mod) { form__send--@@mod }">Задать вопрос</button>
+      <div class="form__checkbox @@if (context.mod) { form__checkbox--@@mod }">
+        <label for="checkbox">
+        <input type="checkbox" id="checkbox" checked>
+        <span class="form__check"></span>
+        Я согласен на обработку персональных данных</label>
+      </div>
     </div>
   </form>
 </div>

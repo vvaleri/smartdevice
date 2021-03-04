@@ -1,0 +1,134 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  color: $color-default-white;
+
+  &__send,
+  &__title {
+    font-family: $font-family--roboto;
+  }
+
+  &__header {
+    margin: 0 0 50px 0;
+  }
+
+  &__title {
+    margin: 0 0 10px 0;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+  }
+
+
+  &__inputs {
+    display: flex;
+  }
+
+  &__inputs input {
+    width: 270px;
+    height: 50px;
+    margin: 0 30px 0 0;
+    padding: 0 5px 0 15px;
+
+    color: $color-tangaroa;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__message textarea {
+    width: 570px;
+    height: 155px;
+    margin: 40px 0 0 0;
+    padding: 15px 5px 5px 15px;
+  }
+
+  &__inputs input,
+  &__message textarea {
+    background-color: #19baff;
+    border-width: 0;
+    border-color: #19baff;
+  }
+
+  &__inputs input::placeholder,
+  &__message textarea::placeholder {
+    color: $color-default-white;
+  }
+
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin: 40px 0 0 0;
+  }
+
+  &__send {
+    max-width: 270px;
+    margin: 0 40px 0 0;
+    padding: 15px 80px;
+
+    color: $color-default-white;
+
+    background-color: $color-blue;
+    border: 1px solid $color-default-white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    max-width: 260px;
+
+    font-size: 14px;
+    line-height: 16px;
+
+    opacity: 0.8;
+
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+
+      cursor: pointer;
+    }
+  }
+
+  &__check {
+    position: relative;
+
+    display: flex;
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    margin: 0 15px 0 0;
+
+    border: 1px solid $color-default-white;
+    cursor: pointer;
+  }
+
+  &__check::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+
+    width: 4px;
+    height: 7px;
+
+    border-right: 1px solid $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+    transform: rotate(30deg);
+    opacity: 0;
+  }
+
+  &__checkbox input:checked + &__check::before {
+    opacity: 1;
+
+    transition: opacity $default-transition-settings;
+  }
+}
