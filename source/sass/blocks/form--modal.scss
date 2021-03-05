@@ -14,9 +14,12 @@
     flex-direction: column;
   }
 
+  &__inputs--modal label {
+    margin: 0 0 30px 0;
+  }
+
   &__inputs--modal input {
     width: 410px;
-    margin: 0 0 30px 0;
     padding-left: 25px;
   }
 
