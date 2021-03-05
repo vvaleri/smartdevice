@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 
   <meta charset="UTF-8">
@@ -30,6 +31,7 @@
   <title>Smart Device</title>
 
 </head>
+
 <body>
 
   <div class="visually-hidden">
@@ -119,7 +121,10 @@
     <main>
       <section class="main">
   <div class="main__bg">
-    <img src="../../img/bg/main-bg.png" alt="серый полупрозрачный узор на фоне">
+    <picture>
+      <source srcset="../../img/bg/main-bg.webp" type="image/webp">
+        <img src="../../img/bg/main-bg.png" alt="серый полупрозрачный узор на фоне">
+    </picture>
   </div>
   <div class="main__inner container">
     <div class="main__content">
@@ -135,7 +140,10 @@
     </div>
       <!-- 1х: 705px; 2x: 1410px -->
       <img class="main__img" src="../../img/content/main-img@1x.png" alt="набор микросхем синего цвета" srcset="../../img/content/main-img@2x.png 2x">
-      <img class="main__triangle" src="../../img/bg/main-triangle.png" alt="белые треугольники на фоне">
+      <picture>
+        <source srcset="../../img/bg/main-triangle.webp" type="image/webp">
+        <img class="main__triangle" src="../../img/bg/main-triangle.png" alt="белые треугольники на фоне">
+      </picture>
   </div>
 </section>
 
@@ -187,7 +195,10 @@
           <div class="company__about about">
   <div class="about__img">
     <!-- 1х: 220px; 2x: 440px -->
-    <img src="../../img/content/about-img@1x.png" srcset="../../img/content/about-img@2x.png 2x" alt="число 2005 синего цвета" width="116" height="305">
+    <picture>
+      <source srcset="./../img/content/about-img@1x.webp 1x, ../../img/content/about-img@2x.webp 2x" type="image/webp">
+        <img src="../../img/content/about-img@1x.png" srcset="../../img/content/about-img@2x.png 2x" alt="число 2005 синего цвета" width="116" height="305">
+    </picture>
   </div>
   <div class="about__content">
     <h2>О компании</h2>
@@ -202,7 +213,10 @@
 
 
         </div>
-        <div class="company__bg"><img src="../img/bg/company-bg.png" alt="серые треугольники на фоне"></div>
+        <picture>
+          <source srcset="../img/bg/company-bg.webp" type="image/webp">
+          <div class="company__bg"><img src="../img/bg/company-bg.png" alt="серые треугольники на фоне"></div>
+        </picture>
       </section>
       <section class="services">
   <div class="services__content container-section">
@@ -210,7 +224,10 @@
     <div class="services__cards cards-services">
       <a class="cards-services__item" href="#">
   <!-- 1х: 370px; 2x: 740px -->
-  <img src="../../img/content/services-img1@1x.png" srcset="../../img/content/services-img1@2x.png 2x" width="370" height="620" alt="" >
+ <picture>
+  <source srcset="../../img/content/services-img1@1x.webp 1x, ../../img/content/services-img1@2x.webp 2x" type="image/webp">
+    <img src="../../img/content/services-img1@1x.png" srcset="../../img/content/services-img1@2x.png 2x" width="370" height="620" alt="" >
+</picture>
   <div class="cards-services__inner">
     <p>Производство печатных плат</p>
     <div class="cards-services__box">
@@ -222,9 +239,13 @@
     </div>
   </div>
 </a>
+
       <a class="cards-services__item" href="#">
   <!-- 1х: 370px; 2x: 740px -->
-  <img src="../../img/content/services-img2@1x.png" srcset="../../img/content/services-img2@2x.png 2x" width="370" height="620" alt="" >
+ <picture>
+  <source srcset="../../img/content/services-img2@1x.webp 1x, ../../img/content/services-img2@2x.webp 2x" type="image/webp">
+    <img src="../../img/content/services-img2@1x.png" srcset="../../img/content/services-img2@2x.png 2x" width="370" height="620" alt="" >
+</picture>
   <div class="cards-services__inner">
     <p>Монтаж печатных плат</p>
     <div class="cards-services__box">
@@ -236,9 +257,13 @@
     </div>
   </div>
 </a>
+
       <a class="cards-services__item" href="#">
   <!-- 1х: 370px; 2x: 740px -->
-  <img src="../../img/content/services-img3@1x.png" srcset="../../img/content/services-img3@2x.png 2x" width="370" height="620" alt="" >
+ <picture>
+  <source srcset="../../img/content/services-img3@1x.webp 1x, ../../img/content/services-img3@2x.webp 2x" type="image/webp">
+    <img src="../../img/content/services-img3@1x.png" srcset="../../img/content/services-img3@2x.png 2x" width="370" height="620" alt="" >
+</picture>
   <div class="cards-services__inner">
     <p>Комплектующие для светотехники</p>
     <div class="cards-services__box">
@@ -250,6 +275,7 @@
     </div>
   </div>
 </a>
+
     </div>
   </div>
 </section>
@@ -258,7 +284,10 @@
         <div class="feedback__inner container-section">
           <div class="feedback__img">
             <!-- 1х: 511px; 2x: 1022px -->
-            <img src="../img/content/feedback-img@1x.png" srcset="../img/content/feedback-img@2x.png 2x" width="511" height="288" alt="белый бумажный самолёт">
+            <picture>
+              <source srcset="../img/content/feedback-img@1x.webp 1x, ../img/content/feedback-img@2x.webp 2x" type="image/webp">
+              <img src="../img/content/feedback-img@1x.png" srcset="../img/content/feedback-img@2x.png 2x" width="511" height="288" alt="белый бумажный самолёт">
+            </picture>
           </div>
           <div class="form">
   <div class="form__header ">
@@ -296,7 +325,10 @@
 </div>
 
         </div>
-        <div class="feedback__bg"><img src="../img/bg/feedback-bg.png" alt="серые треуольники на фоне"></div>
+        <picture>
+          <source srcset="../img/bg/feedback-bg.webp" type="image/webp">
+          <div class="feedback__bg"><img src="../img/bg/feedback-bg.png" alt="серые треуольники на фоне"></div>
+        </picture>
       </section>
     </main>
 
@@ -464,4 +496,5 @@
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
 </html>
