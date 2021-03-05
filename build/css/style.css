@@ -1185,6 +1185,7 @@ button,
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
     max-width: 400px;
     margin: 0 0 0 60px;
     padding: 17px 30px;
