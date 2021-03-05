@@ -5,6 +5,7 @@ const modalFeedback = document.querySelector('.modal--feedback');
 const modalFeedbackBtns = document.querySelectorAll('[data-modal="feedback"]');
 const modalSuccess = document.querySelector('.modal--success');
 const modalSuccessBtns = document.querySelectorAll('[data-modal="success"]');
+const inputName = document.querySelector('#name-modal');
 
 // аргументы setupModal(modal, closeCallback, modalBtns, openCallback, noPrevDefault, preventScrollLock)
 // возможна инициализация только с первыми аргументом,
@@ -21,8 +22,14 @@ const initModals = () => {
     }
   });
 
+  const addFocus = () => {
+    setTimeout(() => {
+      inputName.focus();
+    }, 500);
+  };
+
   if (modalFeedback && modalFeedbackBtns.length) {
-    setupModal(modalFeedback, false, modalFeedbackBtns, false, false);
+    setupModal(modalFeedback, false, modalFeedbackBtns, addFocus, false);
   }
   if (modalSuccess && modalSuccessBtns.length) {
     setupModal(modalSuccess, false, modalSuccessBtns);

@@ -213,10 +213,12 @@
 
 
         </div>
-        <picture>
-          <source srcset="../img/bg/company-bg.webp" type="image/webp">
-          <div class="company__bg"><img src="../img/bg/company-bg.png" alt="серые треугольники на фоне"></div>
-        </picture>
+          <div class="company__bg">
+            <picture>
+              <source srcset="../img/bg/company-bg.webp" type="image/webp">
+              <img src="../img/bg/company-bg.png" alt="серые треугольники на фоне">
+            </picture>
+          </div>
       </section>
       <section class="services">
   <div class="services__content container-section">
@@ -298,11 +300,11 @@
     <div class="form__inputs ">
       <label>
         <span class="visually-hidden">Имя</span>
-        <input data-set="save" class="form__focus  " type="text" placeholder="Имя">
+        <input data-set="save" id="name" type="text" placeholder="Имя">
       </label>
       <label>
         <span class="visually-hidden">Телефон</span>
-        <input data-set="save" data-mask="pnone" type="tel" placeholder="Телефон">
+        <input data-set="save" type="tel" placeholder="Телефон">
       </label>
     </div>
     <div class="form__message ">
@@ -325,10 +327,12 @@
 </div>
 
         </div>
-        <picture>
-          <source srcset="../img/bg/feedback-bg.webp" type="image/webp">
-          <div class="feedback__bg"><img src="../img/bg/feedback-bg.png" alt="серые треуольники на фоне"></div>
-        </picture>
+          <div class="feedback__bg">
+            <picture>
+              <source srcset="../img/bg/feedback-bg.webp" type="image/webp">
+              <img src="../img/bg/feedback-bg.png" alt="серые треуольники на фоне">
+            </picture>
+          </div>
       </section>
     </main>
 
@@ -450,11 +454,11 @@
     <div class="form__inputs  form__inputs--modal ">
       <label>
         <span class="visually-hidden">Имя</span>
-        <input data-set="save" class="form__focus   form__focus--modal " type="text" placeholder="Имя">
+        <input data-set="save" id="name-modal" type="text" placeholder="Имя">
       </label>
       <label>
         <span class="visually-hidden">Телефон</span>
-        <input data-set="save" data-mask="pnone" type="tel" placeholder="Телефон">
+        <input data-set="save" type="tel" placeholder="Телефон">
       </label>
     </div>
     <div class="form__message  form__message--modal ">

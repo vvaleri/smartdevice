@@ -7,11 +7,11 @@
     <div class="form__inputs @@if (context.mod) { form__inputs--@@mod }">
       <label>
         <span class="visually-hidden">Имя</span>
-        <input data-set="save" class="form__focus  @@if (context.mod) { form__focus--@@mod }" type="text" placeholder="Имя">
+        <input data-set="save" id="name@@if (context.mod){-@@mod}" type="text" placeholder="Имя">
       </label>
       <label>
         <span class="visually-hidden">Телефон</span>
-        <input data-set="save" data-mask="pnone" type="tel" placeholder="Телефон">
+        <input data-set="save" type="tel" placeholder="Телефон">
       </label>
     </div>
     <div class="form__message @@if (context.mod) { form__message--@@mod }">
