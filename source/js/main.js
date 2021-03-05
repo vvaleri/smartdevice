@@ -5,6 +5,7 @@ import {initModals} from './modules/init-modals';
 import {moveBlock} from './modules/move-block';
 import {openAccordion} from './modules/open-accordion';
 import {scrollToSection} from './modules/scroll-section';
+import {saveInLocalstorage} from './modules/save-localstorage';
 
 // Utils
 // ---------------------------------
@@ -19,3 +20,4 @@ initModals();
 moveBlock();
 openAccordion();
 scrollToSection();
+saveInLocalstorage();
