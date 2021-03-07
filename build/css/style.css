@@ -1133,38 +1133,42 @@ button,
             transform: translate(50px, 50px); }
     @media (max-width: 1439px) {
       .main__img {
-        max-width: 60%;
-        -webkit-transform: translate(160px, 50px);
-                transform: translate(160px, 50px); } }
+        -webkit-transform: translate(80px, 40px);
+                transform: translate(80px, 40px); } }
     @media (max-width: 1023px) {
       .main__img {
-        -webkit-transform: translate(190px, -20px);
-                transform: translate(190px, -20px); } }
+        -webkit-transform: translate(210px, -40px);
+                transform: translate(210px, -40px);
+        min-width: 465px;
+        height: 340px; } }
     @media (max-width: 767px) {
       .main__img {
-        max-width: 85%;
-        -webkit-transform: translate(0, -10px);
-                transform: translate(0, -10px); } }
+        max-width: 80%;
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0); } }
+    @media (max-width: 480px) {
+      .main__img {
+        min-width: 300px;
+        max-height: 220px; } }
   .main__triangle {
     position: absolute;
     top: 0;
-    right: 0;
-    -webkit-transform: translate(30px, 50px);
-            transform: translate(30px, 50px); }
-    @media (max-width: 1439px) {
+    right: 0; }
+    @media (max-width: 1180px) {
       .main__triangle {
-        max-width: 60%;
-        -webkit-transform: translate(160px, 10px);
-                transform: translate(160px, 10px); } }
+        -webkit-transform: translate(170px, -50px);
+                transform: translate(170px, -50px); } }
     @media (max-width: 1023px) {
       .main__triangle {
-        -webkit-transform: translate(180px, -20px);
-                transform: translate(180px, -20px); } }
+        -webkit-transform: translate(390px, -90px);
+                transform: translate(390px, -90px); } }
     @media (max-width: 767px) {
       .main__triangle {
-        max-width: 80%;
-        -webkit-transform: translate(160px, -20px);
-                transform: translate(160px, -20px); } }
+        -webkit-transform: translate(170px, -30px);
+                transform: translate(170px, -30px); } }
+    @media (max-width: 1180px) {
+      .main__triangle img {
+        max-width: 90%; } }
   .main__bg img {
     position: absolute;
     top: 0;

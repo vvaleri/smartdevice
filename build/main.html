@@ -140,12 +140,18 @@
       </div>
     </div>
     <!-- 1х: 705px; 2x: 1410px -->
-    <img class="main__img" src="../../img/content/main-img@1x.png" alt="набор микросхем синего цвета" srcset="../../img/content/main-img@2x.png 2x" width="705" height="515">
-    <picture>
-      <source srcset="../../img/bg/main-triangle.webp" type="image/webp">
-      <img class="main__triangle" src="../../img/bg/main-triangle.png" alt="белые треугольники на фоне" width="694"
-        height="545">
-    </picture>
+    <div class="main__img">
+      <picture>
+        <source srcset="../../img/content/main-img@1x.webp 1x, ../../img/content/main-img@2x.webp 2x" type="image/webp">
+          <img src="../../img/content/main-img@1x.png" alt="набор микросхем синего цвета" srcset="../../img/content/main-img@2x.png 2x" width="705" height="515">
+      </picture>
+    </div>
+    <div class="main__triangle">
+      <picture>
+        <source srcset="../../img/bg/main-triangle.webp" type="image/webp">
+        <img src="../../img/bg/main-triangle.png" alt="белые треугольники на фоне" width="694" height="545">
+      </picture>
+    </div>
   </div>
 </section>
 

@@ -22,6 +22,7 @@
     @include viewport--sm {
       flex-direction: column-reverse;
     }
+
   }
 
   &__content {
@@ -111,19 +112,24 @@
     transform: translate(50px, 50px);
 
     @include viewport--lg {
-      max-width: 60%;
-
-      transform: translate(160px, 50px);
+      transform: translate(80px, 40px);
     }
 
     @include viewport--md {
-      transform: translate(190px, -20px);
+      transform: translate(210px, -40px);
+      min-width: 465px;
+      height: 340px;
     }
 
     @include viewport--sm {
-      max-width: 85%;
+      max-width: 80%;
 
-      transform: translate(0, -10px);
+      transform: translate(0, 0);
+    }
+
+    @media (max-width: 480px) {
+      min-width: 300px;
+      max-height: 220px;
     }
   }
 
@@ -132,22 +138,22 @@
     top: 0;
     right: 0;
 
-    transform: translate(30px, 50px);
-
-    @include viewport--lg {
-      max-width: 60%;
-
-      transform: translate(160px, 10px);
+    @media (max-width: 1180px) {
+      transform: translate(170px, -50px);
     }
 
     @include viewport--md {
-      transform: translate(180px, -20px);
+      transform: translate(390px, -90px);
     }
 
     @include viewport--sm {
-      max-width: 80%;
+      transform: translate(170px, -30px);
+    }
 
-      transform: translate(160px, -20px);
+    img {
+      @media (max-width: 1180px) {
+        max-width: 90%;
+      }
     }
   }
 
@@ -252,12 +258,4 @@
     }
   }
 
-  // picture {
-  //   img {
-  //     width: 100%;
-  //   display: block;
-  //   height: auto;
-  //   }
-
-  // }
 }
