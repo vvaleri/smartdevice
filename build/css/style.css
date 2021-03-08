@@ -4,7 +4,7 @@
    ========================================================================== */
 /**
  * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.F
  */
 html {
   line-height: 1.15;
@@ -485,8 +485,6 @@ button,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100vh;
-  min-height: calc(100 * var(--vh, 1vh));
   overflow-x: hidden; }
   .wrapper--no-scrollbar {
     height: 100vh;
@@ -503,10 +501,6 @@ button,
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-
-.scroll-lock {
-  position: fixed;
-  overflow-y: auto; }
 
 .btn-reset {
   padding: 0;
@@ -743,10 +737,6 @@ button,
             -ms-flex-direction: column;
                 flex-direction: column;
         padding: 0; } }
-    .footer__content.active {
-      height: 100%;
-      visibility: visible;
-      padding: 0 0 20px 0; }
 
 @media (max-width: 767px) {
   .contacts-footer {
@@ -1020,12 +1010,6 @@ button,
       cursor: pointer; }
       .accordion__btn.active .open {
         opacity: 0; } }
-  @media (max-width: 767px) and (hover: hover), screen and (max-width: 767px) and (min-width: 0\0) {
-    .accordion__btn:focus {
-      outline-style: dashed;
-      outline-color: #c4c4c4; } }
-  .accordion__btn svg {
-    pointer-events: none; }
 
 .main {
   position: relative;

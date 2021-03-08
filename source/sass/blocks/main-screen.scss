@@ -22,7 +22,6 @@
     @include viewport--sm {
       flex-direction: column-reverse;
     }
-
   }
 
   &__content {
@@ -257,5 +256,4 @@
       display: none;
     }
   }
-
 }
