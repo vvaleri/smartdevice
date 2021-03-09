@@ -2,7 +2,7 @@ const accordionBtn = document.querySelectorAll('.accordion__btn');
 const accordionContent = document.querySelectorAll('.accordion__content');
 const content = document.querySelector('.footer__content');
 const title = document.querySelectorAll('.accordion__title');
-const breakpointMobile = window.matchMedia('(max-width:767px)');
+// const breakpointMobile = window.matchMedia('(max-width:767px)');
 
 
 const openAccordion = () => {
@@ -36,15 +36,15 @@ const openAccordion = () => {
   };
 
 
-  const isMobile = () => {
-    if (breakpointMobile.matches) {
+  // const isMobile = () => {
+  //   if (breakpointMobile.matches) {
       content.addEventListener('click', initAccordion);
-    }
-  };
+  //   }
+  // };
 
-  isMobile();
+  // isMobile();
 
-  breakpointMobile.addEventListener('change', isMobile);
+  // breakpointMobile.addEventListener('change', isMobile);
 
 };
 

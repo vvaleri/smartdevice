@@ -216,6 +216,22 @@
     }
   }
 
+  &__btn {
+    &--mobile {
+      display: none;
+
+      @include viewport--sm {
+        display: inline;
+      }
+    }
+
+    &--desktop {
+      @include viewport--sm {
+        display: none;
+      }
+    }
+  }
+
   &__scroll {
     position: absolute;
     bottom: 0;
@@ -242,18 +258,18 @@
   }
 }
 
-.button {
-  &--mobile {
-    display: none;
+// .buttons-main__btn {
+//   &--mobile {
+//     display: none;
 
-    @include viewport--sm {
-      display: inline;
-    }
-  }
+//     @include viewport--sm {
+//       display: inline;
+//     }
+//   }
 
-  &--desktop {
-    @include viewport--sm {
-      display: none;
-    }
-  }
-}
+//   &--desktop {
+//     @include viewport--sm {
+//       display: none;
+//     }
+//   }
+// }
