@@ -16,93 +16,109 @@
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .contact {
+.logo-header {
+  &__desktop {
+    @include viewport--sm {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include viewport--sm {
+      display: block;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  @include viewport--sm {
+    align-items: flex-start;
+  }
+
+  &__mail {
+    margin: 0 85px 0 0;
+
+    @include viewport--md {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  &__phone {
+    margin: 0 50px 0 0;
+
+    @include viewport--md {
+      margin: 0;
+    }
+  }
+
+  &__mail,
+  &__phone {
     display: flex;
     align-items: center;
 
-    @include viewport--sm {
-      align-items: flex-start;
-    }
-
-    &__mail {
-      margin: 0 85px 0 0;
-
+    svg {
       @include viewport--md {
-        margin: 0 30px 0 0;
+        width: 24px;
+        height: 24px;
       }
     }
+  }
 
-    &__phone {
-      margin: 0 50px 0 0;
+  &__link {
+    margin: 0 0 0 15px;
 
-      @include viewport--md {
-        margin: 0;
-      }
+    transition: color $default-transition-settings;
+
+    @include viewport--md {
+      display: none;
     }
 
-    &__mail,
-    &__phone {
-      display: flex;
-      align-items: center;
-
-      svg {
-        @include viewport--md {
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
-
-    &__link {
-      margin: 0 0 0 15px;
+    &:hover,
+    &:focus {
+      color: $color-blue;
 
       transition: color $default-transition-settings;
+    }
+  }
 
-      @include viewport--md {
-        display: none;
-      }
+  &__link,
+  &__btn {
+    color: $color-default-white;
+  }
 
-      &:hover,
-      &:focus {
-        color: $color-blue;
+  &__btn {
+    padding: 14px 25px;
 
-        transition: color $default-transition-settings;
-      }
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $font-family--roboto;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background: none;
+    border: 1px solid $color-default-white;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: background-color $default-transition-settings;
+
+    @include viewport--md {
+      display: none;
     }
 
-    &__link,
-    &__btn {
-      color: $color-default-white;
-    }
-
-    &__btn {
-      padding: 14px 25px;
-
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      font-family: $font-family--roboto;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-
-      background: none;
-      border: 1px solid $color-default-white;
-      border-radius: 5px;
-      cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: $color-blue;
 
       transition: background-color $default-transition-settings;
-
-      @include viewport--md {
-        display: none;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: $color-blue;
-
-        transition: background-color $default-transition-settings;
-      }
     }
   }
 }
