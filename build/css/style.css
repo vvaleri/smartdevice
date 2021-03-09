@@ -1000,7 +1000,7 @@ button,
   min-height: calc(100 * var(--vh, 1vh));
   padding: 90px 0 0 0;
   background-color: #1b2d37; }
-  @media (max-height: 465px) {
+  @media (max-height: 650px) {
     .main {
       padding-bottom: 10px; } }
   .main__inner {
