@@ -1,6 +1,5 @@
 <header class="header">
   <div class="header__wrapper container">
-
     <a href="#" class="header__logo logo-header">
       <svg class="logo-header__desktop" width="202" height="52">
         <use xlink:href="#icon-logo-header"></use>
@@ -10,18 +9,24 @@
       </svg>
     </a>
     <div class="header__contact contact">
-      <div class="contact__mail">
-        <svg width="19" height="14">
-          <use xlink:href="#icon-mail"></use>
-        </svg>
-        <a href="mailto:info@sd.ru" class="contact__link">info@sd.ru</a>
-      </div>
-      <div class="contact__phone">
-        <svg width="18" height="18">
-          <use xlink:href="#icon-phone"></use>
-        </svg>
-        <a href="tel:+74950005252" class="contact__link">+7 (495) 000 52 52</a>
-      </div>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a href="mailto:info@sd.ru" class="contact__link">
+            <svg width="19" height="14">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+            <span>info@sd.ru</span>
+          </a>
+        </li>
+        <li class="contact__item">
+          <a href="tel:+74950005252" class="contact__link">
+            <svg width="18" height="18">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span>+7 (495) 000 52 52</span>
+          </a>
+        </li>
+      </ul>
       <button data-modal="feedback" class="contact__btn">Заказать звонок</button>
     </div>
   </div>

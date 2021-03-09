@@ -2,11 +2,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 3;
 
   display: flex;
   width: 100%;
   padding: 30px 0 10px;
-  z-index: 3;
 
   @include viewport--sm {
     padding: 20px 0 10px;
@@ -36,48 +36,38 @@
 
 .contact {
   display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
   align-items: center;
 
-  @include viewport--sm {
-    align-items: flex-start;
-  }
 
-  &__mail {
-    margin: 0 85px 0 0;
-
-    @include viewport--md {
-      margin: 0 30px 0 0;
-    }
-  }
-
-  &__phone {
-    margin: 0 50px 0 0;
-
-    @include viewport--md {
-      margin: 0;
-    }
-  }
-
-  &__mail,
-  &__phone {
+  &__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+  }
 
-    svg {
-      @include viewport--md {
-        width: 24px;
-        height: 24px;
-      }
+  &__item {
+    margin: 0 0 0 85px;
+
+    @include viewport--md {
+      margin: 0 0 0 30px;
+    }
+
+    @include viewport--sm {
+      margin: 0 0 0 20px;
     }
   }
+
 
   &__link {
-    margin: 0 0 0 15px;
-
     transition: color $default-transition-settings;
 
     @include viewport--md {
-      display: none;
+      span {
+        display: none;
+      }
     }
 
     &:hover,
@@ -94,6 +84,7 @@
   }
 
   &__btn {
+    margin: 0 0 0 45px;
     padding: 14px 25px;
 
     font-weight: 700;
