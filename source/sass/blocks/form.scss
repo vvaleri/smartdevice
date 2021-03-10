@@ -183,7 +183,13 @@
 
 
     input {
-      display: none;
+      position: absolute;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+
+      clip: rect(0 0 0 0);
     }
 
     label {
@@ -194,13 +200,6 @@
 
       &:focus {
         outline: none;
-      }
-
-      @media (hover: hover), screen and (min-width: 0\0) {
-        &:hover,
-        &:focus {
-          opacity: 1;
-        }
       }
     }
   }
@@ -237,5 +236,9 @@
     opacity: 1;
 
     transition: opacity $default-transition-settings;
+  }
+
+  &__checkbox input:focus + &__check {
+    border: 2px solid $color-default-white;
   }
 }
