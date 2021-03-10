@@ -1,11 +1,19 @@
 .about {
   display: flex;
-  margin: 100px 0 0 0;
+  margin: 140px 0 0 0;
+
+  @include viewport--md {
+    margin: 60px 0 0 0;
+  }
+
+  @media (max-width: 375px) {
+    margin: 40px 0 0 0;
+  }
 
   &__img {
     display: flex;
     flex: 1 0 120px;
-    margin: 0 55px 0 0;
+    margin: 0 65px 0 0;
 
     @include viewport--sm {
       display: none;
@@ -16,21 +24,32 @@
     color: $color-gray;
 
     h2 {
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
 
       font-size: 36px;
       font-weight: 400;
       line-height: 51px;
       font-family: $font-family--roboto;
+
+      @include viewport--sm {
+        font-size: 28px;
+        line-height: 39px;
+      }
     }
 
     p {
-      margin: 0 0 25px 0;
+      margin: 0 0 35px 0;
+    }
+
+    span {
+      @include viewport--md {
+        display: none;
+      }
     }
   }
 
   &__btn {
-    margin: 15px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 15px 45px;
 
     font-weight: 700;

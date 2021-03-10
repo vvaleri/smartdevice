@@ -1,7 +1,7 @@
 .advantages {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
-  gap: 30px;
+  gap: 40px 30px;
 
   @media (max-width: 1280px) {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -9,6 +9,7 @@
 
   @include viewport--md {
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    gap: 45px 30px;
   }
 
   @include viewport--sm {

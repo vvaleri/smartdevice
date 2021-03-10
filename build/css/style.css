@@ -687,28 +687,34 @@ button,
             -ms-flex-direction: column;
                 flex-direction: column;
         padding: 0; } }
-  @media (max-width: 1023px) {
-    .footer__info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 20px 24px 25px; } }
-  @media (max-width: 767px) {
-    .footer__info {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 45px 16px 55px; } }
+  .footer__info {
+    margin: -10px 0 0 0; }
+    @media (max-width: 1023px) {
+      .footer__info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 20px 24px 25px;
+        margin: 0; } }
+    @media (max-width: 767px) {
+      .footer__info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 45px 16px 55px; } }
+    @media (max-width: 375px) {
+      .footer__info {
+        padding: 45px 16px 50px; } }
   .footer__social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -723,6 +729,9 @@ button,
     @media (max-width: 1023px) {
       .footer__social {
         margin: 0; } }
+    @media (max-width: 375px) {
+      .footer__social {
+        margin: -15px 0 0 0; } }
   .footer__icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -934,7 +943,13 @@ button,
     pointer-events: auto; }
 
 .menu-footer {
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px); }
+  @media (max-width: 1439px) {
+    .menu-footer {
+      -webkit-transform: translateX(0);
+              transform: translateX(0); } }
   @media (max-width: 1023px) {
     .menu-footer {
       -webkit-box-flex: 1;
@@ -1230,6 +1245,12 @@ button,
 .company {
   position: relative;
   padding: 110px 0; }
+  @media (max-width: 1023px) {
+    .company {
+      padding: 55px 0; } }
+  @media (max-width: 375px) {
+    .company {
+      padding: 40px 0; } }
   .company__inner {
     position: relative;
     z-index: 3; }
@@ -1245,20 +1266,21 @@ button,
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
-  gap: 30px; }
+  gap: 40px 30px; }
   @media (max-width: 1280px) {
     .advantages {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); } }
   @media (max-width: 1023px) {
     .advantages {
-      grid-template-columns: repeat(auto-fit, minmax(345px, 1fr)); } }
+      grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+      gap: 45px 30px; } }
   @media (max-width: 767px) {
     .advantages {
       grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 20px; } }
 
 .card-advantages {
-  padding: 40px 40px 50px 45px;
+  padding: 35px 40px 60px 45px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
@@ -1271,6 +1293,9 @@ button,
   @media (max-width: 767px) {
     .card-advantages {
       padding: 25px 15px 25px 25px; } }
+  @media (max-width: 375px) {
+    .card-advantages {
+      padding: 25px 10px 40px 25px; } }
   .card-advantages__icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1279,6 +1304,9 @@ button,
     @media (max-width: 1023px) {
       .card-advantages__icon {
         margin: 0 0 15px 0; } }
+    @media (max-width: 375px) {
+      .card-advantages__icon {
+        margin: 0 0 10px 0; } }
   .card-advantages__title {
     margin: 0 0 15px 0;
     font-size: 24px;
@@ -1287,7 +1315,8 @@ button,
     color: #00b2ff; }
     @media (max-width: 767px) {
       .card-advantages__title {
-        font-size: 20px; } }
+        font-size: 20px;
+        margin: 0 0 5px 0; } }
   .card-advantages__text {
     color: #666666; }
   @media (hover: hover), screen and (min-width: 0\0) {
@@ -1305,7 +1334,13 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 0 0 0; }
+  margin: 140px 0 0 0; }
+  @media (max-width: 1023px) {
+    .about {
+      margin: 60px 0 0 0; } }
+  @media (max-width: 375px) {
+    .about {
+      margin: 40px 0 0 0; } }
   .about__img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1313,22 +1348,29 @@ button,
     -webkit-box-flex: 1;
         -ms-flex: 1 0 120px;
             flex: 1 0 120px;
-    margin: 0 55px 0 0; }
+    margin: 0 65px 0 0; }
     @media (max-width: 767px) {
       .about__img {
         display: none; } }
   .about__content {
     color: #666666; }
     .about__content h2 {
-      margin: 0 0 20px 0;
+      margin: 0 0 10px 0;
       font-size: 36px;
       font-weight: 400;
       line-height: 51px;
       font-family: "Roboto Condensed", "Arial", sans-serif; }
+      @media (max-width: 767px) {
+        .about__content h2 {
+          font-size: 28px;
+          line-height: 39px; } }
     .about__content p {
-      margin: 0 0 25px 0; }
+      margin: 0 0 35px 0; }
+    @media (max-width: 1023px) {
+      .about__content span {
+        display: none; } }
   .about__btn {
-    margin: 15px 0 0 0;
+    margin: 30px 0 0 0;
     padding: 15px 45px;
     font-weight: 700;
     font-size: 14px;
@@ -1353,6 +1395,12 @@ button,
 .services {
   padding: 90px 0 120px;
   background-color: #1b2d37; }
+  @media (max-width: 1023px) {
+    .services {
+      padding: 100px 0 80px; } }
+  @media (max-width: 375px) {
+    .services {
+      padding: 110px 0 80px; } }
   .services__content {
     font-family: "Roboto Condensed", "Arial", sans-serif;
     color: #ffffff; }
@@ -1368,6 +1416,9 @@ button,
       @media (max-width: 767px) {
         .services__content h2 {
           font-size: 28px; } }
+      @media (max-width: 375px) {
+        .services__content h2 {
+          margin: 0 0 25px 0; } }
 
 .cards-services {
   display: -webkit-box;
@@ -1375,6 +1426,11 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 1439px) {
+    .cards-services {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   @media (max-width: 1023px) {
     .cards-services {
       -webkit-box-orient: vertical;
@@ -1385,12 +1441,20 @@ button,
     position: relative;
     margin: 10px 25px 0 0;
     overflow: hidden; }
+    @media (max-width: 1439px) {
+      .cards-services__item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 280px;
+                flex: 0 1 280px; } }
     @media (max-width: 1023px) {
       .cards-services__item {
         -webkit-box-flex: 0;
             -ms-flex: 0 1 256px;
                 flex: 0 1 256px;
         margin: 0 0 40px 0; } }
+    @media (max-width: 375px) {
+      .cards-services__item {
+        margin: 0 0 30px 0; } }
     .cards-services__item:last-child {
       margin: 10px 0 0 0; }
       @media (max-width: 1023px) {
@@ -1469,11 +1533,14 @@ button,
 
 .feedback {
   position: relative;
-  padding: 80px 0 110px;
+  padding: 95px 0 110px;
   background-color: #00b2ff; }
   @media (max-width: 1023px) {
     .feedback {
-      padding: 80px 0 100px; } }
+      padding: 105px 0 100px; } }
+  @media (max-width: 375px) {
+    .feedback {
+      padding: 30px 0 30px; } }
   .feedback__inner {
     position: relative;
     z-index: 3;
@@ -1489,7 +1556,7 @@ button,
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-    margin: 0 60px 0 0; }
+    margin: 50px 60px 0 0; }
     @media (max-width: 1439px) {
       .feedback__img {
         -webkit-box-flex: 1;
@@ -1523,6 +1590,9 @@ button,
     font-family: "Roboto Condensed", "Arial", sans-serif; }
   .form__header {
     margin: 0 0 50px 0; }
+    @media (max-width: 375px) {
+      .form__header {
+        margin: 0 0 20px 0; } }
   .form__title {
     margin: 0 0 10px 0;
     font-weight: 400;
@@ -1639,7 +1709,7 @@ button,
         margin: 30px 0 0 0; } }
   .form__send {
     max-width: 270px;
-    margin: 0 40px 0 0;
+    margin: 0 50px 0 0;
     padding: 15px 80px;
     color: #ffffff;
     background-color: #00b2ff;

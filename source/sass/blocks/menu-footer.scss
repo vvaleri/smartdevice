@@ -1,5 +1,10 @@
 .menu-footer {
   margin: 0 auto;
+  transform: translateX(-30px);
+
+  @include viewport--lg {
+    transform: translateX(0);
+  }
 
   @include viewport--md {
     flex: 1 0 auto;

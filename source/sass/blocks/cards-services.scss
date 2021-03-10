@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include viewport--lg {
+    justify-content: center;
+  }
+
   @include viewport--md {
     flex-direction: column;
   }
@@ -12,9 +16,17 @@
     margin: 10px 25px 0 0;
     overflow: hidden;
 
+    @include viewport--lg {
+      flex: 0 1 280px;
+    }
+
     @include viewport--md {
       flex: 0 1 256px;
       margin: 0 0 40px 0;
+    }
+
+    @media (max-width: 375px) {
+      margin: 0 0 30px 0;
     }
 
     &:last-child {

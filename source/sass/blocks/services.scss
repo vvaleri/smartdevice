@@ -3,6 +3,14 @@
 
   background-color: $color-tangaroa;
 
+  @include viewport--md {
+    padding: 100px 0 80px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 110px 0 80px;
+  }
+
   &__content {
     font-family: $font-family--roboto;
     color: $color-default-white;
@@ -22,6 +30,10 @@
 
       @include viewport--sm {
         font-size: 28px;
+      }
+
+      @media (max-width: 375px) {
+        margin: 0 0 25px 0;
       }
     }
   }

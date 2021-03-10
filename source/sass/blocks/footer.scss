@@ -19,11 +19,14 @@
   }
 
   &__info {
+    margin: -10px 0 0 0;
+
     @include viewport--md {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 24px 25px;
+      margin: 0;
     }
 
     @include viewport--sm {
@@ -31,7 +34,12 @@
       align-items: center;
       padding: 45px 16px 55px;
     }
+
+    @media (max-width: 375px) {
+      padding: 45px 16px 50px;
+    }
   }
+
 
   &__social {
     display: flex;
@@ -42,6 +50,10 @@
 
     @include viewport--md {
       margin: 0;
+    }
+
+    @media (max-width: 375px) {
+      margin: -15px 0 0 0;
     }
   }
 
