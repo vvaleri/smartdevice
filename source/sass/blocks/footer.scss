@@ -35,7 +35,10 @@
 
   &__social {
     display: flex;
-    margin: 35px 0 0 0;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 130px;
+    margin: 30px 0 0 0;
 
     @include viewport--md {
       margin: 0;
@@ -45,7 +48,7 @@
   &__icon {
     display: flex;
     align-items: center;
-    margin: 0 15px 0 0;
+    margin: 5px 15px 0 0;
 
     border-radius: 50%;
 
@@ -95,7 +98,24 @@
   }
 
   &__info {
+    line-height: 25px;
     opacity: 0.5;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          color: $color-blue;
+
+          transition: color $default-transition-settings;
+        }
+      }
+    }
   }
 }
 
@@ -127,6 +147,17 @@
 
   &__info {
     display: flex;
+
+    a {
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:hover,
+        &:focus {
+          color: $color-blue;
+
+          transition: color $default-transition-settings;
+        }
+      }
+    }
   }
 
   &__years {
