@@ -1,5 +1,6 @@
 .cards-services {
   display: flex;
+  flex-wrap: wrap;
 
   @include viewport--md {
     flex-direction: column;
@@ -8,7 +9,7 @@
   &__item {
     position: relative;
 
-    margin: 0 30px 0 0;
+    margin: 10px 25px 0 0;
     overflow: hidden;
 
     @include viewport--md {
@@ -17,7 +18,11 @@
     }
 
     &:last-child {
-      margin: 0;
+      margin: 10px 0 0 0;
+
+      @include viewport--md {
+        margin: 0;
+      }
     }
 
     img {

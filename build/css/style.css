@@ -1246,6 +1246,9 @@ button,
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
   gap: 30px; }
+  @media (max-width: 1280px) {
+    .advantages {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); } }
   @media (max-width: 1023px) {
     .advantages {
       grid-template-columns: repeat(auto-fit, minmax(345px, 1fr)); } }
@@ -1354,7 +1357,7 @@ button,
     font-family: "Roboto Condensed", "Arial", sans-serif;
     color: #ffffff; }
     .services__content h2 {
-      margin: 0 0 50px 0;
+      margin: 0 0 40px 0;
       font-size: 36px;
       font-weight: 400;
       line-height: 51px; }
@@ -1369,7 +1372,9 @@ button,
 .cards-services {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   @media (max-width: 1023px) {
     .cards-services {
       -webkit-box-orient: vertical;
@@ -1378,7 +1383,7 @@ button,
               flex-direction: column; } }
   .cards-services__item {
     position: relative;
-    margin: 0 30px 0 0;
+    margin: 10px 25px 0 0;
     overflow: hidden; }
     @media (max-width: 1023px) {
       .cards-services__item {
@@ -1387,7 +1392,10 @@ button,
                 flex: 0 1 256px;
         margin: 0 0 40px 0; } }
     .cards-services__item:last-child {
-      margin: 0; }
+      margin: 10px 0 0 0; }
+      @media (max-width: 1023px) {
+        .cards-services__item:last-child {
+          margin: 0; } }
     .cards-services__item img {
       opacity: 0.2;
       -webkit-transition: -webkit-transform 0.3s ease;
